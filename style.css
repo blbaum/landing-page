@@ -1,0 +1,118 @@
+body
+{
+  letter-spacing: -.022em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background-color: #ffffff;
+  color: #3c3744;
+  font-style: normal;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-section, .mid-section, .footer
+{
+  display: flex;
+  padding: 16px 96px;
+}
+
+.top-section
+{
+  border-bottom: .2em solid #3c3744;
+  background-color: rgba(255, 255, 242, 0.5);
+  flex-direction: column;
+}
+
+.top-section
+.header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+
+.top-section
+.links
+{
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+}
+
+a:link, a:visited
+{
+  color: #3c3744d5;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: #1d1d1f;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.top-section
+.container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.top-section
+.l-container
+{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.top-section
+.l-container
+.main-text
+{
+  display:flex;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.top-section
+.l-container
+.subtext
+{
+  display: flex;
+}
+
+.top-section
+.r-container
+{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.top-section
+.r-container
+img
+{
+  border-radius: 16px;
+  border: .1em outset #3c3744;
+}
+
+.mid-section
+{
+  background-color: rgba(255, 255, 242, 0.5);
+  flex: 1;
+}
+
+.footer
+{
+  border-top: .2em solid #3c3744;
+  background-color: rgba(255, 255, 242, 0.5);
+}
