@@ -20,7 +20,7 @@ body
 .top-section
 {
   border-bottom: .2em solid #3c3744;
-  background-color: rgba(255, 255, 242, 0.5);
+  background-color: rgba(251, 255, 241, 0.5);
   flex-direction: column;
 }
 
@@ -49,10 +49,11 @@ a:link, a:visited
   text-decoration: none;
 }
 
-a:hover
+.link:hover
 {
   color: #1d1d1f;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.75);
+  transform: scale(1.2)
 }
 
 .top-section
@@ -99,15 +100,20 @@ a:hover
 
 .top-section
 .r-container
-img
+img:hover,
+.mid-section
+.container-each
+img:hover
 {
-  border-radius: 16px;
-  border: .1em outset #3c3744;
+  transform: scale(1.005);
+  box-shadow:
+    0 0 5px 2px #000000,
+    0 0 10px 5px #00000079;
 }
 
 .mid-section
 {
-  background-color: rgba(255, 255, 242, 0.5);
+  background-color: rgba(251, 255, 241, 0.5);
   flex-direction: column;
   flex: 1;
 }
@@ -128,7 +134,7 @@ img
   display: flex;
   justify-content: space-evenly;
   border-top: 5px;
-  border: .1em solid rgba(0, 0, 0, 0);
+  gap: 2px;
 }
 
 .mid-section
@@ -138,19 +144,95 @@ img
   justify-content: space-evenly;
   flex-direction: column;
   width: 25%;
+  
 }
 
 .mid-section
-.container
-.image
+.container-each
+.subtext
+{
+  text-align: center;
+  margin-top: 8px;
+}
+
+.mid-section
+.quote
+{
+  display: flex;
+  justify-content: center;
+  box-shadow:
+    0 0 5px 2px #c2c5aa,
+    0 0 10px 5px #ffffff,
+    0 0 15px 7px #ffffff79;
+  background-color: #414833;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  padding: 20px 96px;
+  margin: 35px -96px;
+}
+
+.mid-section
+.quote
+.author
+{
+  margin-top: 30px;
+  margin-left: -80px;
+  font-weight: 100;
+}
+
+.mid-section
+.cta
 {
   display: flex;
   flex-direction: column;
-  /* width: ; */
+  margin: auto;
+  width: 50%;
+  gap: 8px;
+}
+
+.mid-section
+.cta
+h4,
+.mid-section
+.cta
+p
+{
+  margin: 0px 0px;
+}
+
+.mid-section
+.cta
+button
+{
+  background-color: #582f0e;
+  border: .1em solid#fbfff1;
+  color: #fbfff1;
+  padding: 4px;
+}
+
+.mid-section
+.cta
+button:hover
+{
+  text-transform: uppercase;
+  transform: scale(1.25);
+  color: #ffff;
+  box-shadow:
+    0 0 5px 2px #000000,
+    0 0 10px 5px #ffffff79;
+}
+
+.mid-section
+.cta
+button:hover::after
+{
+  content: "!";
 }
 
 .footer
 {
+  display: flex;
+  justify-content: center;
   border-top: .2em solid #3c3744;
-  background-color: rgba(255, 255, 242, 0.5);
+  background-color: rgba(251, 255, 241, 0.5);
 }
